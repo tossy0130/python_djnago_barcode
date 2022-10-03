@@ -1,0 +1,30 @@
+{% extends 'kanai_app/base_kanriindex.html' %}
+
+{% block content1 %}
+
+
+<div class="content-wrapper">
+
+<h1>バーコード , QR コード生成</h1>
+<div class="card">
+  <div class="card-body">
+
+
+<form class="form-group" action='' method='POST'>
+{% csrf_token %}
+<p>JANコード： <input type="text" name='jan' style="width: 40%;"></p>
+<p>QRコード： <input type="text" name='qr' style="width: 40%;"></p>
+
+<button type="submit" class="btn btn-success" style="margin: 20px 0 0 40px;">URLからデータを取得する</button> 
+</form>
+
+
+
+  </div>
+</div>
+
+
+
+</div>
+
+{% endblock %}

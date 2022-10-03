@@ -1,0 +1,24 @@
+{% extends 'kanai_app/base_kanriindex.html' %}
+
+{% block content1 %}
+
+
+<div class="content-wrapper">
+
+<h1>バーコード , QR コード生成</h1>
+<div class="card">
+  <div class="card-body">
+
+    <p>
+    <img src="data:image/png;base64,{{ qr }}"/>
+    </p>
+
+
+  </div>
+</div>
+
+
+
+</div>
+
+{% endblock %}
